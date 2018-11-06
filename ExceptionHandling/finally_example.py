@@ -1,8 +1,9 @@
 def divide(x, y):
     try:
         result = x / y
-    except ZeroDivisionError:
-        print("can't division by zero!")
+    except ArithmeticError:
+        print("Arithmetic exception raised.")
+
     else:
         print("result is", result)
     finally:
